@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---- Mobile hamburger menu ----
-  const hamburger = document.querySelector('.hamburger');
+  const hamburger = document.querySelector('.hamburger, .mobile-menu-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
 
   if (hamburger && mobileMenu) {
@@ -96,6 +96,16 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => successMsg.classList.remove('show'), 5000);
         }
       }, 1200);
+    });
+  }
+
+  // ---- Mobile conditions accordion ----
+  const condToggle = document.getElementById('mobileConditionsToggle');
+  const condBody   = document.getElementById('mobileConditionsBody');
+  if (condToggle && condBody) {
+    condToggle.addEventListener('click', () => {
+      const isOpen = condToggle.classList.toggle('open');
+      condBody.classList.toggle('open', isOpen);
     });
   }
 

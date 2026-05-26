@@ -24,6 +24,39 @@
           <a href="index.html"    class="nav__link">Home</a>
           <a href="about.html"    class="nav__link">About</a>
           <a href="services.html" class="nav__link">Services</a>
+          <div class="nav__dropdown">
+            <span class="nav__dropdown-toggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="nav__dropdown-menu">
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Oncology</span>
+                <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
+                <a href="conditions/bladder-cancer.html">Bladder Cancer</a>
+                <a href="conditions/kidney-cancer.html">Kidney Cancer</a>
+                <a href="conditions/testicular-cancer.html">Testicular Cancer</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Men's Health</span>
+                <a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a>
+                <a href="conditions/bph.html">Enlarged Prostate (BPH)</a>
+                <a href="conditions/prostatitis.html">Prostatitis</a>
+                <a href="conditions/low-testosterone.html">Low Testosterone</a>
+                <a href="conditions/peyronies-disease.html">Peyronie's Disease</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Kidney &amp; Bladder</span>
+                <a href="conditions/kidney-stones.html">Kidney Stones</a>
+                <a href="conditions/overactive-bladder.html">Overactive Bladder</a>
+                <a href="conditions/urinary-incontinence.html">Urinary Incontinence</a>
+                <a href="conditions/uti.html">Urinary Tract Infections</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Women's Health</span>
+                <a href="conditions/female-urinary-incontinence.html">Female Incontinence</a>
+                <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
+                <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
+              </div>
+            </div>
+          </div>
           <a href="contact.html"  class="nav__link">Contact</a>
         </div>
         <a href="contact.html" class="btn btn-primary nav__cta">Schedule Appointment</a>
@@ -38,6 +71,29 @@
     <a href="index.html"    class="nav__link">Home</a>
     <a href="about.html"    class="nav__link">About</a>
     <a href="services.html" class="nav__link">Services</a>
+    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="mobile-conditions-body" id="mobileConditionsBody">
+      <span class="mobile-conditions-cat">Oncology</span>
+      <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
+      <a href="conditions/bladder-cancer.html">Bladder Cancer</a>
+      <a href="conditions/kidney-cancer.html">Kidney Cancer</a>
+      <a href="conditions/testicular-cancer.html">Testicular Cancer</a>
+      <span class="mobile-conditions-cat">Men's Health</span>
+      <a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a>
+      <a href="conditions/bph.html">Enlarged Prostate (BPH)</a>
+      <a href="conditions/prostatitis.html">Prostatitis</a>
+      <a href="conditions/low-testosterone.html">Low Testosterone</a>
+      <a href="conditions/peyronies-disease.html">Peyronie's Disease</a>
+      <span class="mobile-conditions-cat">Kidney &amp; Bladder</span>
+      <a href="conditions/kidney-stones.html">Kidney Stones</a>
+      <a href="conditions/overactive-bladder.html">Overactive Bladder</a>
+      <a href="conditions/urinary-incontinence.html">Urinary Incontinence</a>
+      <a href="conditions/uti.html">Urinary Tract Infections</a>
+      <span class="mobile-conditions-cat">Women's Health</span>
+      <a href="conditions/female-urinary-incontinence.html">Female Incontinence</a>
+      <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
+      <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
+    </div>
     <a href="contact.html"  class="nav__link">Contact</a>
     <a href="contact.html"  class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -246,7 +302,7 @@
       <p class="section-intro">Our billing team works hard to maximize your benefits. We accept Medicare, Medicaid, and most commercial insurance plans. Please contact our office to verify your specific coverage before your appointment.</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
         <a href="contact.html" class="btn btn-primary btn-lg">Verify Insurance &amp; Schedule</a>
-        <a href="tel:+15551234567" class="btn btn-outline-white btn-lg">Call (555) 123-4567</a>
+        <a href="tel:+13525961101" class="btn btn-outline-white btn-lg">Call (352) 596-1101</a>
       </div>
     </div>
   </section>
@@ -279,7 +335,7 @@
               <span class="logo__specialty">Board-Certified Urologist</span>
             </div>
           </a>
-          <p>Providing compassionate, expert urological care to patients and their families. Board-certified and fellowship trained for the highest standard of treatment.</p>
+          <p>Serving Brooksville, Hudson, and the surrounding Hernando and Pasco County communities with expert urological and interventional radiology care.</p>
         </div>
         <div class="footer__col">
           <h4>Quick Links</h4>
@@ -301,19 +357,23 @@
           </div>
         </div>
         <div class="footer__col">
-          <h4>Contact</h4>
+          <h4>Locations</h4>
           <div class="footer__contact-items">
             <div class="footer__contact-item">
               <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>1234 Medical Plaza Dr., Suite 500<br/>Your City, State 12345</span>
+              <span><strong style="color:rgba(255,255,255,.8)">Brooksville</strong><br/>12900 Cortez Blvd, Suite 101<br/>Brooksville, FL 34613</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span><strong style="color:rgba(255,255,255,.8)">Hudson</strong><br/>13944 Lakeshore Blvd, Suite C<br/>Hudson, FL 34467</span>
             </div>
             <div class="footer__contact-item">
               <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+15551234567">(555) 123-4567</a>
+              <a href="tel:+13525961101">(352) 596-1101</a>
             </div>
             <div class="footer__contact-item">
-              <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@hamoui-urology.com">info@hamoui-urology.com</a>
+              <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Mon–Thu: 8:30 AM – 4:30 PM<br/>Fri: 9:00 AM – 2:30 PM</span>
             </div>
           </div>
         </div>
