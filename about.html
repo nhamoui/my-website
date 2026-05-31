@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Dr. Nabeel Hamoui | Urologist &amp; Interventional Radiologist</title>
-  <meta name="description" content="Learn about Dr. Nabeel Hamoui, a board-certified urologist and interventional radiologist trained at Duke University and Northwestern Memorial Hospital." />
+  <title>About Dr. Hamoui | Nabeel Hamoui Urology</title>
+  <meta name="description" content="Learn about Dr. Nabeel Hamoui — board-certified urologist and interventional radiologist serving Brooksville and Hudson, FL. Duke MD, Northwestern fellowship." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <header class="header">
+  <!-- ==============================
+       HEADER
+       ============================== -->
+  <header class="header" id="header">
     <div class="header__inner">
       <a href="index.html" class="logo">
-        <div class="logo__icon"><svg viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h14c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5z"/></svg></div>
+        <div class="logo__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
+          </svg>
+        </div>
         <div class="logo__text">
           <span class="logo__name">Nabeel Hamoui, MD</span>
           <span class="logo__specialty">Board-Certified Urologist</span>
         </div>
       </a>
+
       <nav class="nav">
         <div class="nav__links">
-          <a href="index.html"    class="nav__link">Home</a>
-          <a href="about.html"    class="nav__link">About</a>
-          <a href="services.html" class="nav__link">Services</a>
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="about.html" class="nav__link active">About</a>
           <div class="nav__dropdown">
-            <span class="nav__dropdown-toggle">
-              Conditions
-              <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
+            <span class="nav__dropdown-toggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             <div class="nav__dropdown-menu">
               <div class="nav__dropdown-col">
                 <span class="nav__dropdown-cat">Oncology</span>
@@ -59,22 +63,23 @@
               </div>
             </div>
           </div>
-          <a href="contact.html"  class="nav__link">Contact</a>
+          <a href="faq.html" class="nav__link">FAQ</a>
+          <a href="contact.html" class="nav__link">Contact</a>
         </div>
         <a href="contact.html" class="btn btn-primary nav__cta">Schedule Appointment</a>
       </nav>
-      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
+  <!-- Mobile menu -->
   <div class="mobile-menu">
-    <a href="index.html"    class="nav__link">Home</a>
-    <a href="about.html"    class="nav__link">About</a>
-    <a href="services.html" class="nav__link">Services</a>
-    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">
-      Conditions
-      <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="mobile-conditions-body" id="mobileConditionsBody">
       <span class="mobile-conditions-cat">Oncology</span>
       <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
@@ -97,196 +102,211 @@
       <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
       <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
     </div>
+    <a href="faq.html" class="nav__link">FAQ</a>
     <a href="contact.html" class="nav__link">Contact</a>
     <a href="contact.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
 
-  <section class="page-hero">
+  <!-- ==============================
+       PAGE HEADER
+       ============================== -->
+  <section class="about-header">
     <div class="container">
-      <div class="page-hero__inner">
-        <span class="page-hero__label">Our Physician</span>
-        <h1>About Dr. Nabeel Hamoui</h1>
-        <p>Board-certified urologist and interventional radiologist with training at Duke University School of Medicine and Northwestern Memorial Hospital.</p>
-        <div class="breadcrumb">
-          <a href="index.html">Home</a><span>›</span><span>About</span>
-        </div>
-      </div>
+      <h1>About Dr. Hamoui</h1>
+      <p>Board-certified urologist and interventional radiologist serving Brooksville, Hudson, and the Tampa Bay Area — bringing a genuinely personal approach to every patient.</p>
     </div>
   </section>
 
+  <!-- ==============================
+       SECTION 1 — MEET DR. HAMOUI
+       ============================== -->
   <section class="section">
     <div class="container">
-      <div class="doctor-profile">
+      <div class="about-profile">
 
-        <div class="doctor-profile__sidebar">
-          <div class="doctor-profile__photo">
-            <img src="images/dr-hamoui.png" alt="Dr. Nabeel Hamoui, MD, MBA">
-          </div>
-
-          <div class="doctor-profile__info">
-            <h3>Quick Facts</h3>
-            <div class="info-item">
-              <span class="info-item__label">Specialty</span>
-              <span class="info-item__value">Urology</span>
-            </div>
-            <div class="info-item">
-              <span class="info-item__label">Sub-specialty</span>
-              <span class="info-item__value">Interventional Radiology</span>
-            </div>
-            <div class="info-item">
-              <span class="info-item__label">Board Certified</span>
-              <span class="info-item__value">Urology, Diagnostic &amp; Interventional Radiology</span>
-            </div>
-            <div class="info-item">
-              <span class="info-item__label">Medical Degree</span>
-              <span class="info-item__value">Duke University School of Medicine</span>
-            </div>
-            <div class="info-item">
-              <span class="info-item__label">MBA</span>
-              <span class="info-item__value">Kellogg School of Management, Northwestern</span>
-            </div>
-            <div class="info-item">
-              <span class="info-item__label">Languages</span>
-              <span class="info-item__value">English, Arabic</span>
-            </div>
-          </div>
-
-          <div style="margin-top:20px;">
-            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Schedule a Consultation</a>
-          </div>
-          <div style="margin-top:10px;">
-            <a href="tel:+13525961101" class="btn btn-outline" style="width:100%;justify-content:center;">
-              <svg viewBox="0 0 20 20" style="width:15px;height:15px;fill:var(--navy)"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-              (352) 596-1101
-            </a>
-          </div>
+        <div class="about-profile__photo">
+          <img src="Nabeel%20Hamoui%20Temp%20website%20photo.png" alt="Dr. Nabeel Hamoui, MD, MBA">
         </div>
 
-        <div class="about-content">
-          <span class="section-label">Biography</span>
-          <h2>A Native Floridian Dedicated to Excellence</h2>
+        <div class="about-profile__content">
+          <span class="section-label">Meet Dr. Hamoui</span>
+          <h2 class="section-title">A Native Floridian Dedicated to Excellence</h2>
+          <span class="about-profile__role">Urologist &amp; Interventional Radiologist — Brooksville &amp; Hudson, FL</span>
 
-          <p>Dr. Nabeel Hamoui is a native Floridian, born in Brooksville, FL. He received his medical degree from Duke University School of Medicine in Durham, North Carolina, where he also served as a Fellow for the National Institutes of Health. Dr. Hamoui also holds a Master of Business Administration (MBA) degree from the Kellogg School of Management at Northwestern University.</p>
+          <p class="about-profile__bio">Dr. Nabeel Hamoui is a native Floridian, born in Brooksville, FL. He received his medical degree from Duke University School of Medicine in Durham, North Carolina. He completed his residencies in urology and diagnostic radiology and fellowship training in interventional radiology at Northwestern Memorial Hospital in Chicago, IL.</p>
 
-          <p>Dr. Hamoui completed his training in radiology with a fellowship in interventional radiology as well as his urology training at Northwestern Memorial Hospital, Chicago. He also served as Chief Resident in Urology from July 2017 to June 2018. He is board certified in diagnostic and interventional radiology as well as urology. He has served as an instructor for Intuitive Surgical and has trained other surgeons in robotic surgery.</p>
+          <p class="about-profile__bio">He has served as an instructor for Intuitive Surgical and has trained other surgeons in robotic surgery. He is a recognized leader in surgical stone treatment, prostate surgery, robotic surgery, and ED treatments.</p>
 
-          <p>He is a member of the American Urological Association, Society of Interventional Radiology, and the Radiology Society of North America.</p>
+          <p class="about-profile__bio">He is a member of the American Urological Association, Society of Interventional Radiology, and the Radiology Society of North America.</p>
 
-          <h3>Education &amp; Training</h3>
+          <h3 style="margin: 28px 0 16px; font-size: 1.05rem; font-family: 'Inter', sans-serif; color: var(--navy); font-weight: 700;">Education &amp; Training</h3>
           <div class="edu-timeline">
             <div class="edu-item">
               <div class="edu-item__year">Medical Degree</div>
-              <h4>MD — Duke University School of Medicine</h4>
+              <h4>MD, Duke University School of Medicine</h4>
               <p>Durham, North Carolina</p>
             </div>
             <div class="edu-item">
-              <div class="edu-item__year">NIH Fellowship</div>
-              <h4>National Institutes of Health Fellow</h4>
-              <p>Duke University, Durham, North Carolina</p>
-            </div>
-            <div class="edu-item">
-              <div class="edu-item__year">MBA</div>
-              <h4>Master of Business Administration</h4>
-              <p>Kellogg School of Management, Northwestern University</p>
+              <div class="edu-item__year">Residency</div>
+              <h4>Residency in Urology</h4>
+              <p>Northwestern Memorial Hospital, Chicago</p>
             </div>
             <div class="edu-item">
               <div class="edu-item__year">Residency</div>
-              <h4>Urology Residency</h4>
-              <p>Northwestern Memorial Hospital, Chicago, IL</p>
-            </div>
-            <div class="edu-item">
-              <div class="edu-item__year">Chief Resident</div>
-              <h4>Chief Resident in Urology</h4>
-              <p>Northwestern Memorial Hospital — July 2017 to June 2018</p>
+              <h4>Residency in Diagnostic Radiology</h4>
+              <p>Northwestern Memorial Hospital, Chicago</p>
             </div>
             <div class="edu-item">
               <div class="edu-item__year">Fellowship</div>
               <h4>Fellowship in Interventional Radiology</h4>
-              <p>Northwestern Memorial Hospital, Chicago, IL</p>
-            </div>
-            <div class="edu-item">
-              <div class="edu-item__year">Certification</div>
-              <h4>Board Certified</h4>
-              <p>Diagnostic Radiology, Interventional Radiology, and Urology</p>
+              <p>Northwestern Memorial Hospital, Chicago</p>
             </div>
           </div>
 
-          <h3>Areas of Clinical Expertise</h3>
-          <p>Dr. Hamoui's dual training in urology and interventional radiology gives him a uniquely comprehensive approach to treating complex urologic conditions:</p>
-          <div class="specialty-tags">
-            <span class="tag">Robotic-Assisted Surgery</span>
-            <span class="tag">Kidney Stone Disease</span>
-            <span class="tag">Prostate Cancer</span>
-            <span class="tag">Bladder Cancer</span>
-            <span class="tag">Kidney Tumors</span>
-            <span class="tag">BPH / LUTS</span>
-            <span class="tag">Interventional Radiology</span>
-            <span class="tag">Urinary Incontinence</span>
-            <span class="tag">Male Sexual Health</span>
-            <span class="tag">Laparoscopic Surgery</span>
-            <span class="tag">Vasectomy</span>
-            <span class="tag">Minimally Invasive Procedures</span>
-          </div>
-
-          <h3>Philosophy of Care</h3>
-          <p>As a native of Brooksville, Dr. Hamoui is deeply committed to the health of the communities he grew up in. His unique dual board certification in urology and interventional radiology allows him to offer patients a broader range of minimally invasive options than most urologists — combining the precision of image-guided techniques with the full spectrum of urologic surgery.</p>
-          <p>He believes that well-informed patients are empowered patients, and dedicates time to ensuring every individual thoroughly understands their diagnosis and all available treatment paths.</p>
-
-          <h3>Surgical Expertise &amp; Teaching</h3>
-          <p>Dr. Hamoui has served as an instructor for Intuitive Surgical, the maker of the da Vinci robotic surgical system, training fellow surgeons in robotic-assisted techniques. This depth of experience translates into safer, more efficient surgeries and better outcomes for his patients.</p>
-
-          <h3>Professional Memberships</h3>
-          <ul style="list-style:disc;padding-left:20px;color:var(--muted);font-size:.95rem;line-height:2;">
-            <li>American Urological Association (AUA) — Active Member</li>
-            <li>Society of Interventional Radiology (SIR) — Member</li>
-            <li>Radiology Society of North America (RSNA) — Member</li>
-          </ul>
-
-          <h3>Hospital Affiliations</h3>
-          <div class="affiliations-grid">
-            <div class="affiliation-card">
-              <h4>Brooksville Regional Hospital</h4>
-              <p>Active Staff — Urology &amp; Interventional Radiology</p>
-            </div>
-            <div class="affiliation-card">
-              <h4>Regional Medical Center Bayonet Point</h4>
-              <p>Active Staff — Robotic Surgery Program</p>
-            </div>
-            <div class="affiliation-card">
-              <h4>Oak Hill Hospital</h4>
-              <p>Active Staff — Urology Service Line</p>
-            </div>
-            <div class="affiliation-card">
-              <h4>Ambulatory Surgery Center</h4>
-              <p>Attending Urologist — Minimally Invasive Procedures</p>
-            </div>
+          <div class="about-profile__actions">
+            <a href="contact.html" class="btn btn-primary">Schedule Appointment</a>
+            <a href="conditions/index.html" class="btn btn-outline">View Conditions</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ==============================
+       SECTION 2 — PHILOSOPHY OF CARE
+       ============================== -->
+  <section class="section section--light">
+    <div class="container">
+      <span class="section-label">How We Practice</span>
+      <h2 class="section-title">Dr. Hamoui's Philosophy of Care</h2>
+
+      <div class="philosophy-list">
+
+        <div class="philosophy-item">
+          <span class="philosophy-item__check">&#10003;</span>
+          <span>Private independent practice &mdash; not corporate or private equity owned</span>
+        </div>
+
+        <div class="philosophy-item">
+          <span class="philosophy-item__check">&#10003;</span>
+          <span>Minimal layers between you and your doctor</span>
+        </div>
+
+        <div class="philosophy-item">
+          <span class="philosophy-item__check">&#10003;</span>
+          <span>Dr. Hamoui communicates directly with patients via text and phone</span>
+        </div>
+
+        <div class="philosophy-item">
+          <span class="philosophy-item__check">&#10003;</span>
+          <span>Concierge level service with a highly responsive team</span>
+        </div>
+
+        <div class="philosophy-item">
+          <span class="philosophy-item__check">&#10003;</span>
+          <span>You are treated like a person, not a number</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       SECTION 3 — OUR TEAM
+       ============================== -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">The Team</span>
+      <h2 class="section-title">Meet Dr. Hamoui's Team</h2>
+      <p class="section-intro">Dr. Hamoui is supported by an experienced clinical team committed to compassionate, attentive care — from your first call through every follow-up visit.</p>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="8" r="4" fill="currentColor"/>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" fill="currentColor"/>
+            </svg>
+            <span class="team-card__photo-label">Photo Coming Soon</span>
+          </div>
+          <h3>Michelle Bartman, NP</h3>
+          <p>Nurse Practitioner</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="8" r="4" fill="currentColor"/>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" fill="currentColor"/>
+            </svg>
+            <span class="team-card__photo-label">Photo Coming Soon</span>
+          </div>
+          <h3>Lauren Waters, NP</h3>
+          <p>Nurse Practitioner</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="8" r="4" fill="currentColor"/>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" fill="currentColor"/>
+            </svg>
+            <span class="team-card__photo-label">Photo Coming Soon</span>
+          </div>
+          <h3>Amir Khaled</h3>
+          <p>Office Manager</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="8" r="4" fill="currentColor"/>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" fill="currentColor"/>
+            </svg>
+            <span class="team-card__photo-label">Photo Coming Soon</span>
+          </div>
+          <h3>Alex Marro</h3>
+          <p>Surgery Scheduler</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CTA BANNER
+       ============================== -->
   <div class="cta-banner">
     <div class="container">
       <div class="cta-banner__inner">
         <div>
-          <h2>Schedule a Consultation with Dr. Hamoui</h2>
-          <p>Two convenient Hernando and Pasco County locations. New patients are always welcome.</p>
+          <h2>Ready to Take Control of Your Health?</h2>
+          <p>Contact our office today to schedule a consultation with Dr. Hamoui. We accept most major insurance plans and offer telehealth visits.</p>
         </div>
         <div class="cta-banner__actions">
           <a href="contact.html" class="btn btn-primary btn-lg">Book an Appointment</a>
-          <a href="services.html" class="btn btn-outline-white btn-lg">View Our Services</a>
+          <a href="tel:+13525961101" class="btn btn-outline-white btn-lg">
+            <svg viewBox="0 0 20 20" style="width:16px;height:16px;fill:white"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            (352) 596-1101
+          </a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ==============================
+       FOOTER
+       ============================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="index.html" class="logo">
-            <div class="logo__icon"><svg viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h14c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5z"/></svg></div>
+            <div class="logo__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h14c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5z"/></svg>
+            </div>
             <div class="logo__text">
               <span class="logo__name">Nabeel Hamoui, MD</span>
               <span class="logo__specialty">Board-Certified Urologist</span>
@@ -294,36 +314,38 @@
           </a>
           <p>Serving Brooksville, Hudson, and the surrounding Hernando and Pasco County communities with expert urological and interventional radiology care.</p>
         </div>
+
         <div class="footer__col">
           <h4>Quick Links</h4>
           <div class="footer__links">
             <a href="index.html">Home</a>
             <a href="about.html">About Dr. Hamoui</a>
-            <a href="services.html">Our Services</a>
-            <a href="conditions/index.html">Conditions</a>
+            <a href="conditions/index.html">All Conditions</a>
             <a href="contact.html">Contact &amp; Locations</a>
           </div>
         </div>
+
         <div class="footer__col">
-          <h4>Services</h4>
+          <h4>Conditions</h4>
           <div class="footer__links">
-            <a href="services.html">Kidney Stones</a>
-            <a href="services.html">Prostate Health</a>
-            <a href="services.html">Bladder Conditions</a>
-            <a href="services.html">Urologic Oncology</a>
-            <a href="services.html">Robotic Surgery</a>
+            <a href="conditions/kidney-stones.html">Kidney Stones</a>
+            <a href="conditions/bph.html">Prostate Health</a>
+            <a href="conditions/overactive-bladder.html">Bladder Conditions</a>
+            <a href="conditions/prostate-cancer.html">Urologic Oncology</a>
+            <a href="conditions/erectile-dysfunction.html">Male Sexual Health</a>
           </div>
         </div>
+
         <div class="footer__col">
           <h4>Locations</h4>
           <div class="footer__contact-items">
             <div class="footer__contact-item">
               <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span><strong style="color:rgba(255,255,255,0.8)">Brooksville</strong><br/>12900 Cortez Blvd, Suite 101<br/>Brooksville, FL 34613</span>
+              <span><strong style="color:rgba(255,255,255,.8)">Brooksville</strong><br/>12900 Cortez Blvd, Suite 101<br/>Brooksville, FL 34613</span>
             </div>
             <div class="footer__contact-item">
               <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span><strong style="color:rgba(255,255,255,0.8)">Hudson</strong><br/>13944 Lakeshore Blvd, Suite C<br/>Hudson, FL 34467</span>
+              <span><strong style="color:rgba(255,255,255,.8)">Hudson</strong><br/>13944 Lakeshore Blvd, Suite C<br/>Hudson, FL 34467</span>
             </div>
             <div class="footer__contact-item">
               <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -336,6 +358,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
         <p>&copy; 2026 Nabeel Hamoui, MD. All rights reserved.</p>
         <div class="footer__bottom-links">

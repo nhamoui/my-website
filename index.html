@@ -29,10 +29,9 @@
       <nav class="nav">
         <div class="nav__links">
           <a href="index.html"    class="nav__link">Home</a>
-          <a href="about.html"    class="nav__link">About</a>
-          <a href="services.html" class="nav__link">Services</a>
+          <a href="about.html" class="nav__link">About</a>
           <div class="nav__dropdown">
-            <span class="nav__dropdown-toggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="nav__dropdown-toggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             <div class="nav__dropdown-menu">
               <div class="nav__dropdown-col">
                 <span class="nav__dropdown-cat">Oncology</span>
@@ -64,6 +63,7 @@
               </div>
             </div>
           </div>
+          <a href="faq.html" class="nav__link">FAQ</a>
           <a href="contact.html"  class="nav__link">Contact</a>
         </div>
         <a href="contact.html" class="btn btn-primary nav__cta">Schedule Appointment</a>
@@ -78,9 +78,8 @@
   <!-- Mobile menu -->
   <div class="mobile-menu">
     <a href="index.html"    class="nav__link">Home</a>
-    <a href="about.html"    class="nav__link">About</a>
-    <a href="services.html" class="nav__link">Services</a>
-    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <a href="about.html" class="nav__link">About</a>
+    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="mobile-conditions-body" id="mobileConditionsBody">
       <span class="mobile-conditions-cat">Oncology</span>
       <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
@@ -103,6 +102,7 @@
       <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
       <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
     </div>
+    <a href="faq.html" class="nav__link">FAQ</a>
     <a href="contact.html"  class="nav__link">Contact</a>
     <a href="contact.html"  class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -112,65 +112,24 @@
        ============================== -->
   <section class="hero">
     <div class="hero__bg"></div>
-    <div class="hero__grid"></div>
 
     <div class="hero__content">
+      <div class="hero__photo-col">
+        <img src="Nabeel%20Hamoui%20Temp%20website%20photo.png" alt="Dr. Nabeel Hamoui, MD" class="hero__photo">
+      </div>
       <div class="hero__text-col">
         <span class="hero__tag">
           <svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:#7bbcf0"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 12.5A5.5 5.5 0 118 2.5a5.5 5.5 0 010 11zm.75-8h-1.5v3.5l2.88 1.73.75-1.24-2.13-1.27V5.5z"/></svg>
           Accepting New Patients
         </span>
-        <h1 class="hero__title">
-          Expert Urological Care<br/>
-          <span>for Every Stage of Life</span>
-        </h1>
+        <h1 class="hero__title">Nabeel Hamoui, MD</h1>
+        <span class="hero__subtitle">Board-Certified Urologist &amp; Interventional Radiologist</span>
         <p class="hero__text">
-          Dr. Nabeel Hamoui is a board-certified urologist specializing in minimally invasive surgery, kidney stone management, prostate health, and urologic oncology. Compassionate, evidence-based care tailored to you.
+          Serving Brooksville, Hudson &amp; the Tampa Bay Area — fellowship-trained care for kidney stones, prostate health, urologic cancers, bladder conditions, and more.
         </p>
         <div class="hero__actions">
-          <a href="contact.html" class="btn btn-primary btn-lg">
-            <svg viewBox="0 0 20 20" style="width:16px;height:16px;fill:white"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5h8v1H6V7zm0 3h8v1H6v-1zm0 3h5v1H6v-1z"/></svg>
-            Request Appointment
-          </a>
-          <a href="services.html" class="btn btn-outline-white btn-lg">Our Services</a>
-        </div>
-
-        <div class="hero__stats">
-          <div class="stat">
-            <span class="stat__value">15+</span>
-            <span class="stat__label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">3,000+</span>
-            <span class="stat__label">Procedures Performed</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">98%</span>
-            <span class="stat__label">Patient Satisfaction</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Floating info card -->
-      <div class="hero__panel">
-        <div class="hero__card">
-          <div class="hero__card-badge">
-            <svg viewBox="0 0 16 16" style="width:12px;height:12px;fill:#a8d4f5"><path d="M8 1a5 5 0 100 10A5 5 0 008 1zM3 8a5 5 0 1110 0A5 5 0 013 8z"/><path d="M8 4a.5.5 0 01.5.5v3.793l2.146 2.147a.5.5 0 01-.707.707l-2.292-2.293A.5.5 0 018 8.5V4.5A.5.5 0 018 4z"/></svg>
-            New Patient Consultation
-          </div>
-          <h3 class="hero__card-title">Conditions We Treat</h3>
-          <div class="hero__card-items">
-            <div class="hero__card-item">Kidney Stones &amp; Urinary Tract Infections</div>
-            <div class="hero__card-item">Prostate Cancer &amp; Enlarged Prostate (BPH)</div>
-            <div class="hero__card-item">Bladder Cancer &amp; Overactive Bladder</div>
-            <div class="hero__card-item">Kidney &amp; Adrenal Tumors</div>
-            <div class="hero__card-item">Male Sexual Health &amp; Infertility</div>
-            <div class="hero__card-item">Minimally Invasive &amp; Robotic Surgery</div>
-          </div>
-          <div class="hero__card-phone">
-            <p>Call Our Office</p>
-            <a href="tel:+13525961101">(352) 596-1101</a>
-          </div>
+          <a href="contact.html" class="btn btn-primary btn-lg">Schedule Appointment</a>
+          <a href="conditions/index.html" class="btn btn-outline-white btn-lg">View Conditions</a>
         </div>
       </div>
     </div>
@@ -233,8 +192,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h14c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5z"/></svg>
           </div>
           <h3>Kidney Stone Management</h3>
-          <p>State-of-the-art diagnosis and treatment including ureteroscopy, shockwave lithotripsy, and percutaneous nephrolithotomy for all stone types and sizes.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/kidney-stones.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -245,8 +203,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 3a7 7 0 110 14A7 7 0 0112 5zm0 2a5 5 0 100 10A5 5 0 0012 7z"/></svg>
           </div>
           <h3>Prostate Health</h3>
-          <p>Comprehensive evaluation and management of BPH, prostate cancer screening, active surveillance, and minimally invasive prostate procedures.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/bph.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -257,8 +214,7 @@
             <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zM8 11h2v2H8v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
           </div>
           <h3>Bladder Conditions</h3>
-          <p>Expert diagnosis and treatment of overactive bladder, interstitial cystitis, bladder cancer, urinary incontinence, and recurrent UTIs.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/overactive-bladder.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -269,8 +225,7 @@
             <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
           </div>
           <h3>Urologic Oncology</h3>
-          <p>Specialized cancer care for kidney, bladder, prostate, and testicular cancers using robotic surgery, immunotherapy coordination, and surveillance protocols.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/prostate-cancer.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -281,8 +236,7 @@
             <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
           </div>
           <h3>Male Sexual Health</h3>
-          <p>Confidential, compassionate evaluation of erectile dysfunction, male infertility, testosterone deficiency, and Peyronie's disease.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/erectile-dysfunction.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -293,81 +247,15 @@
             <svg viewBox="0 0 24 24"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5zm2.5 7.5c0 .83-.67 1.5-1.5 1.5h-6.5c-.83 0-1.5-.67-1.5-1.5v-3c0-.83.67-1.5 1.5-1.5h.5v-2h4v2h.5c.83 0 1.5.67 1.5 1.5v3z"/><path d="M9.5 10c.83 0 1.5-.67 1.5-1.5v-5C11 2.67 10.33 2 9.5 2S8 2.67 8 3.5v5c0 .83.67 1.5 1.5 1.5z"/></svg>
           </div>
           <h3>Minimally Invasive Surgery</h3>
-          <p>Robotic-assisted and laparoscopic procedures that minimize recovery time, reduce complications, and deliver excellent outcomes for a wide range of urologic conditions.</p>
-          <a href="services.html" class="service-card__link">
+          <a href="conditions/index.html" class="service-card__link">
             Learn more
             <svg viewBox="0 0 16 16"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
 
-      <div style="margin-top:36px;text-align:center">
-        <a href="services.html" class="btn btn-outline">View All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       ABOUT SNIPPET
-       ============================== -->
-  <section class="section section--light">
-    <div class="container">
-      <div class="about-snippet">
-        <div class="about-snippet__image">
-          <div class="doctor-photo-placeholder">
-            <svg viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h14c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5z"/></svg>
-            <span class="doctor-photo-placeholder__label">Dr. Nabeel Hamoui, MD</span>
-          </div>
-          <div class="about-snippet__image-badge">
-            <div>
-              <strong>15+</strong>
-              <span>Years in Practice</span>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <span class="section-label">Meet Dr. Hamoui</span>
-          <h2 class="section-title">A Physician Who Puts Patients First</h2>
-          <p style="color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 8px;">
-            Dr. Nabeel Hamoui is a board-certified urologist with extensive training in minimally invasive and robotic-assisted surgery. He completed his urology residency at a leading academic medical center and earned a fellowship in urologic oncology, bringing a highly specialized skillset to his practice.
-          </p>
-          <p style="color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 24px;">
-            His philosophy is simple: every patient deserves personalized attention, clear communication, and access to the most advanced, evidence-based treatments available.
-          </p>
-
-          <div class="credentials">
-            <div class="credential">
-              <div class="credential__icon">
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <div>
-                <h4>Board Certified</h4>
-                <p>American Board of Urology</p>
-              </div>
-            </div>
-            <div class="credential">
-              <div class="credential__icon">
-                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
-              </div>
-              <div>
-                <h4>Fellowship Trained</h4>
-                <p>Urologic Oncology &amp; Robotic Surgery</p>
-              </div>
-            </div>
-            <div class="credential">
-              <div class="credential__icon">
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <div>
-                <h4>Active AUA Member</h4>
-                <p>American Urological Association</p>
-              </div>
-            </div>
-          </div>
-
-          <a href="about.html" class="btn btn-primary">Learn More About Dr. Hamoui</a>
-        </div>
+      <div style="margin-top:20px;text-align:center">
+        <a href="conditions/index.html" class="btn btn-outline">View All Treatments &amp; Services</a>
       </div>
     </div>
   </section>
@@ -377,10 +265,10 @@
        ============================== -->
   <section class="section section--navy">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 52px;">
+      <div class="text-center" style="margin-bottom: 24px;">
         <span class="section-label">Our Commitment</span>
-        <h2 class="section-title">Why Patients Choose Our Practice</h2>
-        <p class="section-intro">We combine advanced technology with a patient-first culture to deliver care you can trust.</p>
+        <h2 class="section-title">Why Patients Choose Dr. Nabeel Hamoui</h2>
+        <p class="section-intro">Advanced technology, a patient-first culture, and care you can trust.</p>
       </div>
 
       <div class="features-grid">
@@ -464,21 +352,9 @@
           <div class="footer__links">
             <a href="index.html">Home</a>
             <a href="about.html">About Dr. Hamoui</a>
-            <a href="services.html">Our Services</a>
+            <a href="conditions/index.html">All Treatments &amp; Services</a>
             <a href="conditions/index.html">Conditions</a>
             <a href="contact.html">Contact &amp; Locations</a>
-          </div>
-        </div>
-
-        <div class="footer__col">
-          <h4>Services</h4>
-          <div class="footer__links">
-            <a href="services.html">Kidney Stones</a>
-            <a href="services.html">Prostate Health</a>
-            <a href="services.html">Bladder Conditions</a>
-            <a href="services.html">Urologic Oncology</a>
-            <a href="services.html">Robotic Surgery</a>
-            <a href="services.html">Male Sexual Health</a>
           </div>
         </div>
 

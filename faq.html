@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Nabeel Hamoui Urology</title>
+  <meta name="description" content="Frequently asked questions about Dr. Hamoui's practice, insurance, appointments, and what to expect after common urologic procedures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">Nabeel Hamoui, MD</span>
+          <span class="logo__specialty">Board-Certified Urologist</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="about.html" class="nav__link">About</a>
+          <div class="nav__dropdown">
+            <span class="nav__dropdown-toggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="nav__dropdown-menu">
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Oncology</span>
+                <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
+                <a href="conditions/bladder-cancer.html">Bladder Cancer</a>
+                <a href="conditions/kidney-cancer.html">Kidney Cancer</a>
+                <a href="conditions/testicular-cancer.html">Testicular Cancer</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Men's Health</span>
+                <a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a>
+                <a href="conditions/bph.html">Enlarged Prostate (BPH)</a>
+                <a href="conditions/prostatitis.html">Prostatitis</a>
+                <a href="conditions/low-testosterone.html">Low Testosterone</a>
+                <a href="conditions/peyronies-disease.html">Peyronie's Disease</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Kidney &amp; Bladder</span>
+                <a href="conditions/kidney-stones.html">Kidney Stones</a>
+                <a href="conditions/overactive-bladder.html">Overactive Bladder</a>
+                <a href="conditions/urinary-incontinence.html">Urinary Incontinence</a>
+                <a href="conditions/uti.html">Urinary Tract Infections</a>
+              </div>
+              <div class="nav__dropdown-col">
+                <span class="nav__dropdown-cat">Women's Health</span>
+                <a href="conditions/female-urinary-incontinence.html">Female Incontinence</a>
+                <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
+                <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
+              </div>
+            </div>
+          </div>
+          <a href="faq.html" class="nav__link active">FAQ</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <a href="contact.html" class="btn btn-primary nav__cta">Schedule Appointment</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="mobile-conditions-body" id="mobileConditionsBody">
+      <span class="mobile-conditions-cat">Oncology</span>
+      <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
+      <a href="conditions/bladder-cancer.html">Bladder Cancer</a>
+      <a href="conditions/kidney-cancer.html">Kidney Cancer</a>
+      <a href="conditions/testicular-cancer.html">Testicular Cancer</a>
+      <span class="mobile-conditions-cat">Men's Health</span>
+      <a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a>
+      <a href="conditions/bph.html">Enlarged Prostate (BPH)</a>
+      <a href="conditions/prostatitis.html">Prostatitis</a>
+      <a href="conditions/low-testosterone.html">Low Testosterone</a>
+      <a href="conditions/peyronies-disease.html">Peyronie's Disease</a>
+      <span class="mobile-conditions-cat">Kidney &amp; Bladder</span>
+      <a href="conditions/kidney-stones.html">Kidney Stones</a>
+      <a href="conditions/overactive-bladder.html">Overactive Bladder</a>
+      <a href="conditions/urinary-incontinence.html">Urinary Incontinence</a>
+      <a href="conditions/uti.html">Urinary Tract Infections</a>
+      <span class="mobile-conditions-cat">Women's Health</span>
+      <a href="conditions/female-urinary-incontinence.html">Female Incontinence</a>
+      <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
+      <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
+    </div>
+    <a href="faq.html" class="nav__link active">FAQ</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Schedule Appointment</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="faq-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Quick answers to common questions about our practice, insurance, and what to expect after your procedure.</p>
+    </div>
+  </section>
+
+  <!-- FAQ BODY -->
+  <div class="faq-body">
+    <div class="container">
+      <div class="faq-list">
+
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What insurances does Dr. Hamoui accept?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>We accept most major insurance plans, including:</p>
+            <ul>
+              <li>Medicare</li>
+              <li>Blue Cross Blue Shield</li>
+              <li>Aetna</li>
+              <li>Cigna</li>
+              <li>United Healthcare</li>
+              <li>Humana</li>
+              <li>Tricare</li>
+            </ul>
+            <p>Insurance plans and coverage can change, so we always recommend calling our office at <strong>(352) 596-1101</strong> to confirm your specific plan is accepted before your visit.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Does Dr. Hamoui see patients without insurance?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes — we welcome self-pay patients and work hard to make care as affordable as possible. As an independent private practice, we're able to offer straightforward, cost-effective self-pay pricing without the overhead of a large hospital system.</p>
+            <p>We also accept <strong>CareCredit</strong> for patients who need flexible payment options. Give us a call at <strong>(352) 596-1101</strong> and we'll walk you through what to expect before your visit.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Who can I expect to see during my visit?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Dr. Hamoui sees patients in the clinic four days a week and personally handles all surgical procedures. On days when Dr. Hamoui is in the operating room, our nurse practitioners — Michelle Bartman, NP and Lauren Waters, NP — may see you for follow-up visits or routine care.</p>
+            <p>Importantly, our NPs always run plans and decisions by Dr. Hamoui directly, so you can be confident he is involved in your care regardless of who you see on a given day. Dr. Hamoui also communicates directly with patients via phone and text, so you're never left in the dark.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What can I expect after kidney stone surgery?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Recovery details for kidney stone surgery will be discussed with you in detail before and after your procedure. Every patient's situation is a little different depending on the size and location of the stone and the procedure performed. Dr. Hamoui and his team will give you personalized recovery instructions and are available to answer questions along the way.</p>
+            <p><em>This section will be updated with detailed post-operative guidance — check back soon or call us at <strong>(352) 596-1101</strong>.</em></p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What can I expect after robotic prostate surgery?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Recovery from robotic-assisted radical prostatectomy is generally faster than open surgery, and most patients go home the same day or the day after. Dr. Hamoui will walk you through what to expect in detail before your procedure.</p>
+            <p><em>This section will be updated with detailed post-operative guidance — check back soon or call us at <strong>(352) 596-1101</strong>.</em></p>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What can I expect after robotic kidney surgery?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Robotic kidney surgery (partial or radical nephrectomy) is minimally invasive, and most patients recover more quickly than with traditional open approaches. Your specific recovery timeline depends on the extent of the procedure.</p>
+            <p><em>This section will be updated with detailed post-operative guidance — check back soon or call us at <strong>(352) 596-1101</strong>.</em></p>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What can I expect after UroLift?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>UroLift is an in-office procedure for enlarged prostate (BPH) with a rapid recovery — most men return to normal activities within a few days. Some temporary urinary symptoms like frequency or mild discomfort are common in the first week.</p>
+            <p><em>This section will be updated with detailed post-procedure guidance — check back soon or call us at <strong>(352) 596-1101</strong>.</em></p>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What can I expect after Aquablation?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Aquablation uses a robotic waterjet to remove prostate tissue with a high degree of precision. Recovery is generally well-tolerated, and most patients experience significant improvement in urinary symptoms within weeks.</p>
+            <p><em>This section will be updated with detailed post-operative guidance — check back soon or call us at <strong>(352) 596-1101</strong>.</em></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="faq-cta">
+        <p>Still have a question? We're happy to help.</p>
+        <a href="contact.html" class="btn btn--primary">Contact Our Office</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var isOpen = this.classList.contains('open');
+        document.querySelectorAll('.faq-item__question').forEach(function(b) {
+          b.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+          b.nextElementSibling.classList.remove('open');
+        });
+        if (!isOpen) {
+          this.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+          this.nextElementSibling.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
