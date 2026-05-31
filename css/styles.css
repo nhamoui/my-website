@@ -2446,9 +2446,9 @@ section#about { padding-top: 40px; padding-bottom: 52px; }
 
 /* Team section */
 .team-grid {
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-top: 44px;
 }
 
@@ -2456,9 +2456,8 @@ section#about { padding-top: 40px; padding-bottom: 52px; }
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 40px 32px;
+  padding: 36px 24px;
   text-align: center;
-  width: 260px;
 }
 
 .team-card__photo {
@@ -2496,10 +2495,15 @@ section#about { padding-top: 40px; padding-bottom: 52px; }
 
 .team-card p { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
+@media (max-width: 860px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 768px) {
   .philosophy-grid { grid-template-columns: 1fr; }
-  .team-grid { justify-content: center; }
   .about-header { padding: 100px 0 40px; }
+}
+@media (max-width: 480px) {
+  .team-grid { grid-template-columns: 1fr; }
 }
 
 /* ==============================
