@@ -109,6 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- Mobile procedures accordion ----
+  const procToggle = document.getElementById('mobileProceduresToggle');
+  const procBody   = document.getElementById('mobileProceduresBody');
+  if (procToggle && procBody) {
+    procToggle.addEventListener('click', () => {
+      const isOpen = procToggle.classList.toggle('open');
+      procBody.classList.toggle('open', isOpen);
+    });
+  }
+
   // ---- Smooth anchor scrolling ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

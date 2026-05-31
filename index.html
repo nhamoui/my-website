@@ -12,74 +12,46 @@
   <!-- ==============================
        HEADER
        ============================== -->
-  <header class="header">
-    <div class="header__inner">
-      <a href="index.html" class="logo">
-        <div class="logo__icon">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C9.24 2 7 4.24 7 7c0 1.93 1.05 3.62 2.6 4.52C7.09 13.03 5 15.82 5 19h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.18-2.09-5.97-4.6-7.48C15.95 10.62 17 8.93 17 7c0-2.76-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
-          </svg>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__brand"><div><span class="header__brand-name">Nabeel Hamoui, MD</span><span class="header__brand-sub">Urology &amp; Interventional Radiology</span></div></a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <div class="nav__dropdown"><span class="nav__dropdown-toggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="nav__dropdown-menu">
+          <div class="nav__dropdown-col"><span class="nav__dropdown-cat">Oncology</span><a href="conditions/prostate-cancer.html">Prostate Cancer</a><a href="conditions/bladder-cancer.html">Bladder Cancer</a><a href="conditions/kidney-cancer.html">Kidney Cancer</a><a href="conditions/testicular-cancer.html">Testicular Cancer</a></div>
+          <div class="nav__dropdown-col"><span class="nav__dropdown-cat">Men's Health</span><a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a><a href="conditions/bph.html">Enlarged Prostate (BPH)</a><a href="conditions/prostatitis.html">Prostatitis</a><a href="conditions/low-testosterone.html">Low Testosterone</a><a href="conditions/peyronies-disease.html">Peyronie's Disease</a></div>
+          <div class="nav__dropdown-col"><span class="nav__dropdown-cat">Kidney &amp; Bladder</span><a href="conditions/kidney-stones.html">Kidney Stones</a><a href="conditions/overactive-bladder.html">Overactive Bladder</a><a href="conditions/urinary-incontinence.html">Urinary Incontinence</a><a href="conditions/uti.html">Urinary Tract Infections</a></div>
+          <div class="nav__dropdown-col"><span class="nav__dropdown-cat">Women's Health</span><a href="conditions/female-urinary-incontinence.html">Female Incontinence</a><a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a><a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a></div>
         </div>
-        <div class="logo__text">
-          <span class="logo__name">Nabeel Hamoui, MD</span>
-          <span class="logo__specialty">Board-Certified Urologist</span>
-        </div>
-      </a>
-
-      <nav class="nav">
-        <div class="nav__links">
-          <a href="index.html"    class="nav__link">Home</a>
-          <a href="about.html" class="nav__link">About</a>
-          <div class="nav__dropdown">
-            <span class="nav__dropdown-toggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            <div class="nav__dropdown-menu">
-              <div class="nav__dropdown-col">
-                <span class="nav__dropdown-cat">Oncology</span>
-                <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
-                <a href="conditions/bladder-cancer.html">Bladder Cancer</a>
-                <a href="conditions/kidney-cancer.html">Kidney Cancer</a>
-                <a href="conditions/testicular-cancer.html">Testicular Cancer</a>
-              </div>
-              <div class="nav__dropdown-col">
-                <span class="nav__dropdown-cat">Men's Health</span>
-                <a href="conditions/erectile-dysfunction.html">Erectile Dysfunction</a>
-                <a href="conditions/bph.html">Enlarged Prostate (BPH)</a>
-                <a href="conditions/prostatitis.html">Prostatitis</a>
-                <a href="conditions/low-testosterone.html">Low Testosterone</a>
-                <a href="conditions/peyronies-disease.html">Peyronie's Disease</a>
-              </div>
-              <div class="nav__dropdown-col">
-                <span class="nav__dropdown-cat">Kidney &amp; Bladder</span>
-                <a href="conditions/kidney-stones.html">Kidney Stones</a>
-                <a href="conditions/overactive-bladder.html">Overactive Bladder</a>
-                <a href="conditions/urinary-incontinence.html">Urinary Incontinence</a>
-                <a href="conditions/uti.html">Urinary Tract Infections</a>
-              </div>
-              <div class="nav__dropdown-col">
-                <span class="nav__dropdown-cat">Women's Health</span>
-                <a href="conditions/female-urinary-incontinence.html">Female Incontinence</a>
-                <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
-                <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
-              </div>
-            </div>
+      </div>
+      <div class="nav__dropdown"><span class="nav__dropdown-toggle">Procedures &amp; Treatments<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="nav__dropdown-menu nav__dropdown-menu--proc">
+          <div class="nav__dropdown-col">
+            <a href="procedures/urolift.html">UroLift</a>
+            <a href="procedures/aquablation.html">Aquablation</a>
+            <a href="procedures/biote.html">BioTE Hormone Therapy</a>
+            <a href="procedures/davinci.html">Da Vinci Robotic Surgery</a>
           </div>
-          <a href="faq.html" class="nav__link">FAQ</a>
-          <a href="contact.html"  class="nav__link">Contact</a>
+          <div class="nav__dropdown-col">
+            <a href="procedures/ureteroscopy.html">Ureteroscopy &amp; Laser Lithotripsy</a>
+            <a href="procedures/sns.html">SNS Nerve Stimulators</a>
+            <a href="procedures/ipp.html">Boston Scientific IPP</a>
+          </div>
         </div>
-        <a href="contact.html" class="btn btn-primary nav__cta">Schedule Appointment</a>
-      </nav>
+      </div>
+      <a href="faq.html" class="nav__link">FAQ</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-      <button class="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile menu -->
-  <div class="mobile-menu">
+<div class="mobile-menu" id="mobileMenu">
     <a href="index.html"    class="nav__link">Home</a>
     <a href="about.html" class="nav__link">About</a>
-    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Treatments and Services<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button class="mobile-conditions-toggle" id="mobileConditionsToggle">Conditions<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="mobile-conditions-body" id="mobileConditionsBody">
       <span class="mobile-conditions-cat">Oncology</span>
       <a href="conditions/prostate-cancer.html">Prostate Cancer</a>
@@ -102,9 +74,13 @@
       <a href="conditions/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a>
       <a href="conditions/interstitial-cystitis.html">Interstitial Cystitis</a>
     </div>
+    <button class="mobile-conditions-toggle" id="mobileProceduresToggle">Procedures &amp; Treatments<svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="mobile-conditions-body" id="mobileProceduresBody">
+      <a href="procedures/urolift.html">UroLift</a><a href="procedures/aquablation.html">Aquablation</a><a href="procedures/biote.html">BioTE Hormone Therapy</a><a href="procedures/davinci.html">Da Vinci Robotic Surgery</a><a href="procedures/ureteroscopy.html">Ureteroscopy &amp; Laser Lithotripsy</a><a href="procedures/sns.html">SNS Nerve Stimulators</a><a href="procedures/ipp.html">Boston Scientific IPP</a>
+    </div>
     <a href="faq.html" class="nav__link">FAQ</a>
     <a href="contact.html"  class="nav__link">Contact</a>
-    <a href="contact.html"  class="btn btn-primary">Schedule Appointment</a>
+    <a href="contact.html" class="btn btn--primary" style="margin-top:8px;">Request Appointment</a>
   </div>
 
   <!-- ==============================
@@ -130,6 +106,14 @@
         <div class="hero__actions">
           <a href="contact.html" class="btn btn-primary btn-lg">Schedule Appointment</a>
           <a href="conditions/index.html" class="btn btn-outline-white btn-lg">View Conditions</a>
+        </div>
+        <div class="hero__coe">
+          <span class="hero__coe-label">Centers of Excellence</span>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <a href="procedures/urolift.html" class="hero__coe-badge">⭐ UroLift</a>
+            <a href="procedures/aquablation.html" class="hero__coe-badge">⭐ Aquablation</a>
+            <a href="procedures/ipp.html" class="hero__coe-badge">⭐ Boston Scientific IPP</a>
+          </div>
         </div>
       </div>
     </div>
