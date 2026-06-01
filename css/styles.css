@@ -1815,6 +1815,13 @@ p:last-child { margin-bottom: 0; }
   background: var(--blue);
 }
 
+.cond-location {
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 18px 0 0;
+}
+
 .cond-footer {
   display: flex;
   justify-content: center;
