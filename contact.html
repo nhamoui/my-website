@@ -181,6 +181,7 @@
         <!-- Right: form -->
         <div>
           <div class="contact-form-card">
+            <div id="formWrapper">
             <h3>Request an Appointment</h3>
             <p>Fill out the form and our scheduling team will contact you within one business day. Fields marked * are required.</p>
 
@@ -260,16 +261,25 @@
                   I consent to being contacted by Nabeel Hamoui Urology regarding my appointment request. I understand this form does not transmit protected health information. *
                 </label>
               </div>
+              <div id="formError" class="form-error" hidden role="alert">
+                <svg viewBox="0 0 20 20" style="width:18px;height:18px;fill:#991b1b;flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+                <span>Submission failed. Please call our office directly at <a href="tel:+13525961101">(352) 596-1101</a> to schedule your appointment.</span>
+              </div>
               <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
                 <svg viewBox="0 0 20 20" style="width:16px;height:16px;fill:white"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
                 Send Appointment Request
               </button>
               <p class="form-notice">For same-day or urgent concerns, call us directly at <a href="tel:+13525961101" style="color:var(--blue);">(352) 596-1101</a>.</p>
-              <div id="formSuccess" class="form-success" role="alert">
-                <svg viewBox="0 0 20 20" style="width:20px;height:20px;fill:#2e7d32;flex-shrink:0"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span><strong>Request received!</strong> Our team will call you within 1 business day to confirm your appointment.</span>
-              </div>
             </form>
+            </div><!-- /#formWrapper -->
+            <div id="formConfirmation" class="form-confirmation" hidden role="alert">
+              <div class="form-confirmation__icon">
+                <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <h3>Thank you!</h3>
+              <p>We've received your request and will be in touch within one business day.</p>
+              <p class="form-confirmation__phone">For urgent concerns, call us directly at <a href="tel:+13525961101">(352) 596-1101</a>.</p>
+            </div>
           </div>
 
           <div style="background:var(--blue-pale);border:1px solid rgba(26,109,191,.2);border-radius:var(--radius-lg);padding:28px;margin-top:24px;">
